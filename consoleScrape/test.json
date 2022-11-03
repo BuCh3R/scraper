@@ -1,0 +1,899 @@
+[
+  {
+    "MatchID": "ReadingPreston",
+    "Danskespil": {
+      "Odds1": "2,40",
+      "Oddsx": "3,15",
+      "Odds2": "3,00"
+    },
+    "Betfair": {
+      "Odds1": "1.75\r\n3.25\r\n4.25",
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "HorsensRanders",
+    "Danskespil": {
+      "Odds1": "3,10",
+      "Oddsx": "3,55",
+      "Odds2": "2,25"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "FremadAmagerSønderjyskE",
+    "Danskespil": {
+      "Odds1": "5,20",
+      "Oddsx": "4,00",
+      "Odds2": "1,60"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "HobroHBKøge",
+    "Danskespil": {
+      "Odds1": "2,60",
+      "Oddsx": "3,30",
+      "Odds2": "2,60"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "SkiveKoldingIF",
+    "Danskespil": {
+      "Odds1": "3,40",
+      "Oddsx": "3,45",
+      "Odds2": "1,92"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "B.M'gladbachStuttgart",
+    "Danskespil": {
+      "Odds1": "2,10",
+      "Oddsx": "3,85",
+      "Odds2": "3,10"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "UdineseLecce",
+    "Danskespil": {
+      "Odds1": "1,55",
+      "Oddsx": "4,00",
+      "Odds2": "6,10"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "DarmstadtHannover96",
+    "Danskespil": {
+      "Odds1": "1,75",
+      "Oddsx": "3,90",
+      "Odds2": "4,10"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "HansaRostockSandhausen",
+    "Danskespil": {
+      "Odds1": "1,90",
+      "Oddsx": "3,50",
+      "Odds2": "3,95"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "LeedsBournemouth",
+    "Danskespil": {
+      "Odds1": "1,72",
+      "Oddsx": "3,90",
+      "Odds2": "4,70"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "ManchesterCityFulham",
+    "Danskespil": {
+      "Odds1": "1,14",
+      "Oddsx": "8,65",
+      "Odds2": "19,00"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "NottinghamForestBrentford",
+    "Danskespil": {
+      "Odds1": "2,75",
+      "Oddsx": "3,35",
+      "Odds2": "2,55"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "WolverhamptonBrighton",
+    "Danskespil": {
+      "Odds1": "3,40",
+      "Oddsx": "3,40",
+      "Odds2": "3,40\r\n2\r\n2,15"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "EvertonLeicester",
+    "Danskespil": {
+      "Odds1": "2,40",
+      "Oddsx": "3,35",
+      "Odds2": "3,00"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "SheffieldUBurnley",
+    "Danskespil": {
+      "Odds1": "2,45",
+      "Oddsx": "3,35",
+      "Odds2": "2,75"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "BlackburnHuddersfield",
+    "Danskespil": {
+      "Odds1": "1,82",
+      "Oddsx": "3,50",
+      "Odds2": "4,30"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "BlackpoolLuton",
+    "Danskespil": {
+      "Odds1": "2,70",
+      "Oddsx": "3,25",
+      "Odds2": "2,55"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "MiddlesbroughBristolC",
+    "Danskespil": {
+      "Odds1": "1,80",
+      "Oddsx": "3,65",
+      "Odds2": "4,20"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "MillwallHull",
+    "Danskespil": {
+      "Odds1": "1,82",
+      "Oddsx": "3,50",
+      "Odds2": "4,30"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "QueensPRWestBromwich",
+    "Danskespil": {
+      "Odds1": "2,50",
+      "Oddsx": "3,35",
+      "Odds2": "2,70"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "RotherhamNorwich",
+    "Danskespil": {
+      "Odds1": "3,90",
+      "Oddsx": "3,50",
+      "Odds2": "1,90"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "StokeBirmingham",
+    "Danskespil": {
+      "Odds1": "2,05",
+      "Oddsx": "3,35",
+      "Odds2": "3,55"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "SunderlandCardiff",
+    "Danskespil": {
+      "Odds1": "2,20",
+      "Oddsx": "3,20",
+      "Odds2": "3,35"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "SwanseaWigan",
+    "Danskespil": {
+      "Odds1": "1,90",
+      "Oddsx": "3,40",
+      "Odds2": "4,00"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "WatfordCoventry",
+    "Danskespil": {
+      "Odds1": "1,90",
+      "Oddsx": "3,45",
+      "Odds2": "3,95"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "HvidovreFCHelsingør",
+    "Danskespil": {
+      "Odds1": "2,10",
+      "Oddsx": "3,45",
+      "Odds2": "3,30"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "VendsysselNykøbingFC",
+    "Danskespil": {
+      "Odds1": "1,35",
+      "Oddsx": "4,90",
+      "Odds2": "8,00"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "AarhusFremadThisted",
+    "Danskespil": {
+      "Odds1": "1,67",
+      "Oddsx": "3,80",
+      "Odds2": "4,20"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "BrabrandAB",
+    "Danskespil": {
+      "Odds1": "3,40",
+      "Oddsx": "3,55",
+      "Odds2": "1,90"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "FremRoskilde",
+    "Danskespil": {
+      "Odds1": "2,85",
+      "Oddsx": "3,50",
+      "Odds2": "2,15"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "LysengIshøjIF",
+    "Danskespil": {
+      "Odds1": "2,40",
+      "Oddsx": "3,70",
+      "Odds2": "2,40"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "VanløseSfB-OureFA",
+    "Danskespil": {
+      "Odds1": "1,55",
+      "Oddsx": "4,00",
+      "Odds2": "4,70"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "VSKAarhusNæsby",
+    "Danskespil": {
+      "Odds1": "2,30",
+      "Oddsx": "3,55",
+      "Odds2": "2,60"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "MiddelfartABTårnby",
+    "Danskespil": {
+      "Odds1": "1,17",
+      "Oddsx": "6,50",
+      "Odds2": "11,50"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "AugsburgFrankfurt",
+    "Danskespil": {
+      "Odds1": "4,20",
+      "Oddsx": "4,00",
+      "Odds2": "1,75"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "DortmundBochum",
+    "Danskespil": {
+      "Odds1": "1,23",
+      "Oddsx": "6,40",
+      "Odds2": "11,50"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "HerthaBerlinBayernMünchen",
+    "Danskespil": {
+      "Odds1": "10,00",
+      "Oddsx": "6,30",
+      "Odds2": "1,25"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "HoffenheimRBLeipzig",
+    "Danskespil": {
+      "Odds1": "2,90",
+      "Oddsx": "3,60",
+      "Odds2": "2,30"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "MainzWolfsburg",
+    "Danskespil": {
+      "Odds1": "2,05",
+      "Oddsx": "3,60",
+      "Odds2": "3,45"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "WerderBremenSchalke04",
+    "Danskespil": {
+      "Odds1": "1,62",
+      "Oddsx": "4,30",
+      "Odds2": "4,80"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "SundbyBK(k)HBKøge(k)",
+    "Danskespil": {
+      "Odds1": "10,50",
+      "Oddsx": "6,00",
+      "Odds2": "1,20"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "Brøndby(k)AGF(k)",
+    "Danskespil": {
+      "Odds1": "1,40",
+      "Oddsx": "4,70",
+      "Odds2": "5,80"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "ChelseaArsenal",
+    "Danskespil": {
+      "Odds1": "2,60",
+      "Oddsx": "3,40",
+      "Odds2": "2,70"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "AstonVillaManchesterUnited",
+    "Danskespil": {
+      "Odds1": "3,35",
+      "Oddsx": "3,50",
+      "Odds2": "2,15"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "SouthamptonNewcastle",
+    "Danskespil": {
+      "Odds1": "3,95",
+      "Oddsx": "3,65",
+      "Odds2": "1,90"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "WestHamCrystalPalace",
+    "Danskespil": {
+      "Odds1": "1,92",
+      "Oddsx": "3,50",
+      "Odds2": "4,10"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "TottenhamLiverpool",
+    "Danskespil": {
+      "Odds1": "3,25",
+      "Oddsx": "3,65",
+      "Odds2": "2,15"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "AaBSilkeborg",
+    "Danskespil": {
+      "Odds1": "3,10",
+      "Oddsx": "3,50",
+      "Odds2": "2,25"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "ViborgAGF",
+    "Danskespil": {
+      "Odds1": "2,10",
+      "Oddsx": "3,40",
+      "Odds2": "3,60"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "FCKøbenhavnLyngby",
+    "Danskespil": {
+      "Odds1": "1,35",
+      "Oddsx": "5,20",
+      "Odds2": "8,65"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "OBBrøndby",
+    "Danskespil": {
+      "Odds1": "2,90",
+      "Oddsx": "3,40",
+      "Odds2": "2,45"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "NæstvedFCFredericia",
+    "Danskespil": {
+      "Odds1": "2,05",
+      "Oddsx": "3,45",
+      "Odds2": "3,45"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "VejleHillerød",
+    "Danskespil": {
+      "Odds1": "1,32",
+      "Oddsx": "5,00",
+      "Odds2": "9,35"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "EsbjergB93",
+    "Danskespil": {
+      "Odds1": "1,85",
+      "Oddsx": "3,70",
+      "Odds2": "3,45"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "YoungBoysFDHolstebro",
+    "Danskespil": {
+      "Odds1": "1,37",
+      "Oddsx": "4,60",
+      "Odds2": "6,50"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "LeverkusenUnionBerlin",
+    "Danskespil": {
+      "Odds1": "2,10",
+      "Oddsx": "3,50",
+      "Odds2": "3,35"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "FreiburgFCKöln",
+    "Danskespil": {
+      "Odds1": "1,72",
+      "Oddsx": "3,95",
+      "Odds2": "4,40"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "FCNordsjaelland(k)FortunaHjørring(k)",
+    "Danskespil": {
+      "Odds1": "4,00",
+      "Oddsx": "3,75",
+      "Odds2": "1,72"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "KoldingIF(k)FCThy-ThistedQ(k)",
+    "Danskespil": {
+      "Odds1": "2,20",
+      "Oddsx": "3,50",
+      "Odds2": "2,80"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "FCMidtjyllandFCNordsjælland",
+    "Danskespil": {
+      "Odds1": "2,55",
+      "Oddsx": "3,50",
+      "Odds2": "2,70"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "RayoVallecanoRealMadrid",
+    "Danskespil": {
+      "Odds1": "5,40",
+      "Oddsx": "4,20",
+      "Odds2": "1,60"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "RegginaGenoa",
+    "Danskespil": {
+      "Odds1": "2,95",
+      "Oddsx": "3,25",
+      "Odds2": "2,35"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "LugoCartagena",
+    "Danskespil": {
+      "Odds1": "2,80",
+      "Oddsx": "2,95",
+      "Odds2": "2,70"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "ChavesSantaClara",
+    "Danskespil": {
+      "Odds1": "2,35",
+      "Oddsx": "3,10",
+      "Odds2": "3,10"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "FenerbahceSivasspor",
+    "Danskespil": {
+      "Odds1": "1,35",
+      "Oddsx": "5,10",
+      "Odds2": "7,65"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "HataysporBasaksehir",
+    "Danskespil": {
+      "Odds1": "4,10",
+      "Oddsx": "3,50",
+      "Odds2": "1,85"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "AZAlkmaar2Roda",
+    "Danskespil": {
+      "Odds1": "2,95",
+      "Oddsx": "3,35",
+      "Odds2": "2,20"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "PSV2Almere",
+    "Danskespil": {
+      "Odds1": "2,20",
+      "Oddsx": "3,50",
+      "Odds2": "2,85"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  },
+  {
+    "MatchID": "Utrecht2FCEindhoven",
+    "Danskespil": {
+      "Odds1": "3,10",
+      "Oddsx": "3,55",
+      "Odds2": "2,05"
+    },
+    "Betfair": {
+      "Odds1": null,
+      "Oddsx": null,
+      "Odds2": null
+    }
+  }
+]
