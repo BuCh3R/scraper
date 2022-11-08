@@ -5,13 +5,16 @@ using System.Text;
 using consoleScrape;
 using System.Text.Json;
 using System.Text.RegularExpressions;
-using Newtonsoft.Json.Linq;
+//using Newtonsoft.Json.Linq;
 using System;
 using System.Reflection.Metadata;
+//using Newtonsoft.Json;
+using System.Xml.Linq;
+using System.Linq;
+using System.IO;
 
 IWebDriver driver = new ChromeDriver();
-
-List<scrapedata> _data = new List<scrapedata>();
+List<Scrapedata> _data = new List<Scrapedata>();
 
 //method saves new string inbetween 2 string values in a string
 static string getBetween(string strSource, string strStart, string strEnd)
@@ -47,6 +50,7 @@ bool isElementPresent(By by)
     }
 }
 
+
 void danskeSpil(Action a, string url)
 {
 
@@ -55,8 +59,6 @@ void danskeSpil(Action a, string url)
     Thread.Sleep(2* 1000);
     var cookieButton = driver.FindElement(By.Id("ensSaveAll"));
     cookieButton.Click();
-
-    //var csv = new StringBuilder();
 
     // targets event div and creates main loop
     IList<IWebElement> elements = driver.FindElements(By.ClassName("event-list__item-link"));
@@ -84,11 +86,13 @@ void danskeSpil(Action a, string url)
             awayTeam = wrap4.FindElement(By.ClassName("event-card__body__name__away")).Text;
             string tempID = homeTeam + awayTeam;
             createMatchID = Regex.Replace(tempID, @"\s+", "");
+            createMatchID = createMatchID.Replace(@"ø", "o").Replace(@"æ", "ae").Replace(@"å", "aa");
 
         }
         else
         {
             createMatchID = Regex.Replace(wrap4.Text, @"\s+", "");
+            createMatchID = createMatchID.Replace(@"ø", "o").Replace(@"æ", "ae").Replace(@"å", "aa");
 
         }
 
@@ -97,8 +101,6 @@ void danskeSpil(Action a, string url)
         var outer2 = outer1.FindElement(By.ClassName("market__body"));
         var outer3 = outer2.FindElement(By.ClassName("market__body__outcomes"));
         var odds = outer3.FindElement(By.ClassName("market__body__outcome-row"));
-
-
         string source = odds.Text + "endoftext";
         string oldHomeOdds;
 
@@ -139,75 +141,35 @@ void danskeSpil(Action a, string url)
         }
         else
         {
+            var danskespilObj = new SpilUdbyder
+            {
+                UdbyderID = "Danskespil",
+                Odds1 = homeOdds,
+                Oddsx = drawOdds,
+                Odds2 = awayOdds
+            };
 
-            //Console.WriteLine("1: " + homeTeam.Text + " - " + "2: " + awayTeam.Text + "\r\n" + odds.Text + "\r\n");
-            //csv.AppendLine("1: " + homeTeam + " - " + "2: " + awayTeam + "\r\n" + odds.Text + "\r\n" + myObj.dk + myObj.bf);
-
-            var danskespilObj = new Danskespil();
-            danskespilObj.Odds1 = homeOdds;
-            danskespilObj.Oddsx = drawOdds;
-            danskespilObj.Odds2 = awayOdds;
-
-            _data.Add(new scrapedata()
+            _data.Add(new Scrapedata()
             {
 
                 MatchID = createMatchID,
-                Danskespil = danskespilObj
+                SpilUdbyder = danskespilObj
 
             });
-            
         }
-
-        //Console.Write(createMatchID);
-
-        //string json = JsonSerializer.Serialize(_data);
-        //File.WriteAllText("..\\..\\..\\test.json", json);
-        
     }
     a();
-    //File.WriteAllText("..\\..\\..\\danskespil.csv", csv.ToString());
-    Console.WriteLine("Closing browser in 5 seconds...");
+    Console.WriteLine("Done! Redirecting browser in 5 seconds...");
     Thread.Sleep(5 * 1000);
-    driver.Quit();
+    
 }
-//danskeSpil(writeToJson, "https://danskespil.dk/oddset/sport/12/fodbold/matches");
-//danskeSpil(appendToJson, "https://danskespil.dk/oddset/dagenskampe");
+danskeSpil(writeToJson, "https://danskespil.dk/oddset/sport/12/fodbold/matches?preselectedFilters=70");
 
 void writeToJson()
 {
     string json = JsonSerializer.Serialize(_data);
-    //json = json.TrimStart(new char[] { '[' }).TrimEnd(new char[] { ']' });
     File.WriteAllText("..\\..\\..\\test.json", json);
 }
-
-void appendToJson()
-{
-
-    string json = JsonSerializer.Serialize(_data);
-    //json = json.TrimStart(new char[] { '[' }).TrimEnd(new char[] { ']' });
-    File.AppendAllText("..\\..\\..\\test.json", json);
-}
-
-//string json = File.ReadAllText("..\\..\\..\\test.json");
-//dynamic jsonObj = Newtonsoft.Json.JsonConvert.DeserializeObject(json);
-//jsonObj[0]["Betfair"]["Odds1"] = ":D";
-//string output = Newtonsoft.Json.JsonConvert.SerializeObject(jsonObj, Newtonsoft.Json.Formatting.Indented);
-//File.WriteAllText("..\\..\\..\\test.json", output);
-
-
-
-// NEED TO FIND A WAY TO CHECK IF CURRENT JSONFILE HAVE FIELD CONTAINING MATCHID -> INSERT NEW DATA FROM BETFAIR -- ELSE -- ADD NEW OBJECT AND INSERT DATA
-// NEED TO FIND A WAY TO CHECK IF CURRENT JSONFILE HAVE FIELD CONTAINING MATCHID -> INSERT NEW DATA FROM BETFAIR -- ELSE -- ADD NEW OBJECT AND INSERT DATA
-// NEED TO FIND A WAY TO CHECK IF CURRENT JSONFILE HAVE FIELD CONTAINING MATCHID -> INSERT NEW DATA FROM BETFAIR -- ELSE -- ADD NEW OBJECT AND INSERT DATA
-// NEED TO FIND A WAY TO CHECK IF CURRENT JSONFILE HAVE FIELD CONTAINING MATCHID -> INSERT NEW DATA FROM BETFAIR -- ELSE -- ADD NEW OBJECT AND INSERT DATA
-// NEED TO FIND A WAY TO CHECK IF CURRENT JSONFILE HAVE FIELD CONTAINING MATCHID -> INSERT NEW DATA FROM BETFAIR -- ELSE -- ADD NEW OBJECT AND INSERT DATA
-// NEED TO FIND A WAY TO CHECK IF CURRENT JSONFILE HAVE FIELD CONTAINING MATCHID -> INSERT NEW DATA FROM BETFAIR -- ELSE -- ADD NEW OBJECT AND INSERT DATA
-// NEED TO FIND A WAY TO CHECK IF CURRENT JSONFILE HAVE FIELD CONTAINING MATCHID -> INSERT NEW DATA FROM BETFAIR -- ELSE -- ADD NEW OBJECT AND INSERT DATA
-
-
-
-
-
 
 
 void betFair(string url)
@@ -219,44 +181,109 @@ void betFair(string url)
     var cookieButton = driver.FindElement(By.Id("onetrust-accept-btn-handler"));
     cookieButton.Click();
 
-    var csv = new StringBuilder();
-
     IList<IWebElement> elements = driver.FindElements(By.ClassName("event-information"));
-    int id = 0;
+
     string createMatchID;
-
-
+    var json = File.ReadAllText("..\\..\\..\\test.json");
+    var scrapeObj = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Scrapedata>>(json);
     foreach (IWebElement e in elements)
     {
         var odds1 = e.FindElement(By.ClassName("avb-col-markets"));
         var odds2 = odds1.FindElement(By.ClassName("market-3-runners"));
         var odds3 = odds2.FindElement(By.ClassName("runner-list"));
         var odds4 = odds3.FindElement(By.ClassName("runner-list-selections"));
+        var homeOdds = odds4.FindElement(By.ClassName("sel-0"));
+        var drawOdds = odds4.FindElement(By.ClassName("sel-1"));
+        var awayOdds = odds4.FindElement(By.ClassName("sel-2"));
+        var homeOdds1 = homeOdds.FindElement(By.ClassName("ui-runner-price")).Text;
+        var drawOdds1 = drawOdds.FindElement(By.ClassName("ui-runner-price")).Text;
+        var awayOdds1 = awayOdds.FindElement(By.ClassName("ui-runner-price")).Text;
+        homeOdds1 = homeOdds1.Replace(".", ",");
+        drawOdds1 = drawOdds1.Replace(".", ",");
+        awayOdds1 = awayOdds1.Replace(".", ",");
 
         var teams1 = e.FindElement(By.ClassName("avb-col-runners"));
         var teams2 = teams1.FindElement(By.ClassName("event-name-info"));
         var teams3 = teams2.FindElement(By.ClassName("teams-container"));
 
         createMatchID = Regex.Replace(teams3.Text, @"\s+", "");
+        createMatchID = createMatchID.Replace(@"ø", "o").Replace(@"æ", "ae").Replace(@"å", "aa");
 
-        //Console.WriteLine("ID: " + id + "\r\n" + teams3.Text + "\r\n" + odds4.Text + "\r\n");
-        //csv.AppendLine("ID: " + id + "\r\n" + teams3.Text + "\r\n" + odds4.Text + "\r\n");
-        id++;
-
-
-        string json = File.ReadAllText("..\\..\\..\\test.json");
-        dynamic jsonObj = Newtonsoft.Json.JsonConvert.DeserializeObject(json);
-
-
-
+        var bfairOjb = new SpilUdbyder
+        {
+            UdbyderID = "Betfair",
+            Odds1 = homeOdds1,
+            Oddsx = drawOdds1,
+            Odds2 = awayOdds1
+        };
+        scrapeObj.Add(new Scrapedata
+        {
+            MatchID = createMatchID,
+            SpilUdbyder = bfairOjb
+        });
+        string newJson = JsonSerializer.Serialize(scrapeObj);
+        File.WriteAllText("..\\..\\..\\test.json", newJson);
 
     }
-    //File.WriteAllText("..\\..\\..\\betfair.csv", csv.ToString());
+    
     Console.WriteLine("Done!");
-    Thread.Sleep(10 * 1000);
+    Thread.Sleep(5 * 1000);
     driver.Quit();
 }
-//betFair("https://www.betfair.com/sport/football");
+betFair("https://www.betfair.com/sport/football?selectedTabType=COUNTRY_CODE_FOOTBALL");
 
 
+void sameMatch()
+{
+    var json = File.ReadAllText("..\\..\\..\\test.json");
+    var scrapeObj = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Scrapedata>>(json);
+    var matchList = scrapeObj.Select(x => x).ToList();
+    var query = matchList.GroupBy(x => x.MatchID, x => x.MatchID, (matchID, count) => new
+    {
+        Key = matchID,
+        Count = count.Count()
+    });
+
+    foreach(var result in query)
+    {
+        Console.WriteLine("\nMatchID: " + result.Key);
+        Console.WriteLine("Number of matches with same MatchID: " + result.Count);
+        if (result.Count > 1)
+        {
+            var match = scrapeObj.Where(x => x.MatchID == result.Key);
+            var bigOdds1 = match.Select(x => decimal.Parse(x.SpilUdbyder.Odds1)).Max();
+            var bigOddsx = match.Select(x => decimal.Parse(x.SpilUdbyder.Oddsx)).Max();
+            var bigOdds2 = match.Select(x => decimal.Parse(x.SpilUdbyder.Odds2)).Max();
+            var bestBookieOdds1 = match.Select(x => x.SpilUdbyder).Where(x => decimal.Parse(x.Odds1) == bigOdds1);
+            var bookielist1 = bestBookieOdds1.Select(x => x.UdbyderID).ToList();
+            var bestBookieOddsx = match.Select(x => x.SpilUdbyder).Where(x => decimal.Parse(x.Oddsx) == bigOddsx);
+            var bookielistx = bestBookieOddsx.Select(x => x.UdbyderID).ToList();
+            var bestBookieOdds2 = match.Select(x => x.SpilUdbyder).Where(x => decimal.Parse(x.Odds2) == bigOdds2);
+            var bookielist2 = bestBookieOdds2.Select(x => x.UdbyderID).ToList();
+            string bestBookie1 = "";
+            string bestBookiex = "";
+            string bestBookie2 = "";
+
+            for (int i = 0; i < bookielist1.Count; i++)
+            {
+                bestBookie1 = bookielist1[i];
+            }
+            for (int i = 0; i < bookielistx.Count; i++)
+            {
+                bestBookiex = bookielistx[i];
+            }
+            for (int i = 0; i < bookielist2.Count; i++)
+            {
+                bestBookie2 = bookielist2[i];
+            }
+            Console.WriteLine("////////////////////////");
+            Console.WriteLine(bestBookie1 + " Has the Highest Odds 1; " + bigOdds1);
+            Console.WriteLine(bestBookiex + " Has the Highest Odds X; " + bigOddsx);
+            Console.WriteLine(bestBookie2 + " Has the Highest Odds 2; " + bigOdds2);
+            Console.WriteLine("////////////////////////");
+            Console.WriteLine("--------------------------------------------------------");
+        }
+    }
+}
+sameMatch();
 Console.Read();
